@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+    
+          <div class="col-xl-10 col-lg-12 col-md-9">
+    
+            <div class="card o-hidden border-0 shadow-lg my-5">
+              <div class="card-body p-0">
+                <div class="row">
+                  <div class="col">
+                    <div class="p-5" id="login-section">
+                      
+                      <div class="text-center">
+                        <h1 class="h6 font-weight-bold text-dark">Selamat Datang Kembali!</h1>
+                      </div>
+                      <div class="text-center">
+                        <h1 class=" small font-weight-normal text-dark mb-4">Masukkan informasi Anda</h1>
+                      </div>
+                      <form method='post' action="#" id="login-form"">
+                        <div class="form-group">
+                          <label for="username"  class="font-weight-bold text-dark">Username</label>
+                          <input type="text" id="login-username" name="username" class="form-control form-control-user"
+                            placeholder="Masukkan Username" aria-label="Username" aria-describedby="basic-addon" required
+                            autofocus>
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="font-weight-bold text-dark">Password</label>
+                          <input type="password" id="login-password" name="password" class="form-control form-control-user mb-4"
+                            placeholder="************" aria-label="Username" aria-describedby="basic-addon" required
+                            autofocus>
+                        </div>
+                        <div class="row">
+                          <button class="btn btn-dark btn-user btn-block btn-icon-split align-items-center mb-4 mt-4 p-2"
+                            type="submit" name="login" >Login
+                            <span class="icon text-white">
+                              <i class="fas fa-arrow-right"></i>
+                            </span>
+                          </button>
+                          </div>
+    
+                      </form>
+                      <hr>
+    
+                      <div class=" text-center d-flex justify-content-center ">
+                        <div class="font-weight-normal small text-dark">Belum mempunyai akun? <a class="medium"
+                            href="register.html" >Register</a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+      <script src="login.js"></script>
+</body>
+</html>
+</html>

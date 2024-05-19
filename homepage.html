@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="text-center text-dark m-4 font-weight-bold">
+      Selamat datang user!
+    </h1>
+    <div id="crud-section" class="m-4">
+      <h2 class="text-dark m-2">Create Product</h2>
+      <form id="create-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            class="form-control form-control-user"
+            required
+          />
+          <input
+            type="number"
+            id="price"
+            placeholder="Price"
+            class="form-control form-control-user"
+            required
+          />
+          <input
+            type="number"
+            id="stock"
+            placeholder="Stock"
+            class="form-control form-control-user"
+            required
+          />
+          <button
+            type="submit"
+            class="btn btn-primary btn-user btn-block mt-2 mt-2"
+          >
+            Create
+          </button>
+        </div>
+      </form>
+      <h2 class="text-dark m-2">Read Products</h2>
+      <div class="form-group">
+        <form id="read-many-form">
+          <input
+            type="text"
+            id="name-search"
+            placeholder="Search by Name"
+            class="form-control form-control-user"
+          />
+          <input
+            type="number"
+            id="price-min"
+            placeholder="Min Price"
+            class="form-control form-control-user"
+          />
+          <input
+            type="number"
+            id="price-max"
+            placeholder="Max Price"
+            class="form-control form-control-user"
+          />
+          <input
+            type="number"
+            id="stock-min"
+            placeholder="Min Stock"
+            class="form-control form-control-user"
+          />
+          <input
+            type="number"
+            id="stock-max"
+            placeholder="Max Stock"
+            class="form-control form-control-user"
+          />
+          <button type="submit" class="btn btn-success btn-user btn-block mt-2">
+            Search
+          </button>
+        </form>
+      </div>
+      <div id="products-list"></div>
+      <h2 class="text-dark m-2">Read Product by ID</h2>
+      <div class="form-group">
+        <form id="read-one-form">
+          <input
+            type="number"
+            id="product-id"
+            placeholder="Product ID"
+            required
+            class="form-control form-control-user"
+          />
+          <button type="submit" class="btn btn-dark btn-user btn-block mt-2">
+            Search
+          </button>
+        </form>
+      </div>
+      <div id="product-details"></div>
+      <h2 class="text-dark m-2">Update Product</h2>
+      <div class="form-group">
+        <form id="update-form">
+          <input
+            type="number"
+            id="update-id"
+            placeholder="Product ID"
+            required
+            class="form-control form-control-user"
+          />
+          <input
+            type="text"
+            id="update-name"
+            placeholder="New Name"
+            class="form-control form-control-user"
+          />
+          <input
+            type="number"
+            id="update-price"
+            placeholder="New Price"
+            class="form-control form-control-user"
+          />
+          <input
+            type="number"
+            id="update-stock"
+            placeholder="New Stock"
+            class="form-control form-control-user"
+          />
+          <button type="submit" class="btn btn-warning btn-user btn-block mt-2">
+            Update
+          </button>
+        </form>
+      </div>
+      <h2 class="text-dark m-2">Delete Product</h2>
+      <div class="form-group">
+        <form id="delete-form">
+          <input
+            type="number"
+            id="delete-id"
+            placeholder="Product ID"
+            required
+            class="form-control form-control-user"
+          />
+          <button type="submit" class="btn btn-danger btn-user btn-block mt-2">
+            Delete
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="homepage.js"></script>
+  </body>
+</html>
